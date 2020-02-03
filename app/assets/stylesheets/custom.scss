@@ -1,0 +1,232 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'color';
+
+body {
+  padding-top: 60px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h2 {
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: $logo;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $gray-medium-light;
+  a {
+    color: $color-black;
+    &:hover {
+      color: $gray;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+}
+
+.container {
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: $container;
+}
+
+#error_explanation {
+  color: $color-red;
+  ul {
+    color: $color-red;
+    margin: 0 0 30px 0;
+  }
+}
+
+input {
+  height: auto !important;
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid $color-border;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.pagination-content {
+  text-align: center;
+  .parent-pagination {
+    display: inline-block;
+  }
+}
+
+.title-menu {
+  text-align: center;
+  padding: 13px;
+  font-size: initial;
+}
+
+.input-form {
+  border: none;
+  border-bottom: 2px solid $color-black;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.text-input {
+  font-size: 130%;
+  padding-left: 5px;
+  margin: 0;
+}
+
+.submit {
+  margin: 5px 0;
+  padding: 5px;
+  width: 100%;
+  border-radius: 4px;
+  font-weight: bolder;
+  font-size: 120%;
+  color: $color-button;
+  background-color: $color-button-background;
+  border: 1px solid $color-button-border;
+}
+
+.first-row {
+  border-bottom: 1px solid $color-red;
+  border-top: 1px solid $color-red;
+}
+
+.title-menu-name {
+  text-align: center;
+  padding: 13px;
+  font-size: 150%;
+}
+
+.form-create {
+  position: relative;
+  left: 25%;
+  width: 600px;
+  box-shadow: 5px 3px 3px 5px $color-grey;
+  border-radius: 10px;
+  padding: 30px 25px;
+  margin: 20px 25px;
+}
+
+.title-create {
+  display: block;
+  font-size: 250%;
+  color: $color-black;
+  line-height: 2;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content-name {
+  font-family: serif;
+  font-size: 250%;
+  font-style: italic;
+  color: $container-name;
+}
+
+.alert-notice, .alert-alert {
+  background-color: $notice-background;
+  border-color: $notice-border;
+  color: $notice;
+  text-align: left;
+}
+
+.button-add-custom {
+  width: max-content;
+  padding: 5px 10px;
+  position: relative;
+  left: 70%;
+  top: -7px;
+  border: 1px solid $color-button-border;
+  border-radius: 5px 5px;
+  background-color: $color-button-background;
+  color: white;
+}
+
+.title-name {
+  padding: 0 70px;
+  margin-top: 20px;
+  border-bottom: 5px solid $container-name;
+}
+
+.sub_comment_form {
+  padding: 0 30px;
+}
+
+.sub_comments {
+  padding: 0 40px;
+}
+
+.form-comments {
+  display: none;
+}
+
+.reply {
+  display: none;
+}

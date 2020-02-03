@@ -1,0 +1,49 @@
+time: "Hanoi"
+enabled_locales: ["en"]
+client:
+  host: "localhost:3000"
+
+pages:
+  page_number: 15
+
+static_pages:
+  limit_post: 8
+  limit_food: 8
+
+type_image:  ["jpg", "jpeg", "gif", "png"]
+
+models:
+  users:
+    length_name: 100
+    regex_phone: !ruby/regexp /\A\d+\z/
+    min_length_phone: 10
+    max_length_phone: 12
+  discounts:
+    name: 50
+    minimum: 5
+    maximum: 50
+    description: 500
+  tables:
+    description: 500
+  catalogs:
+    description: 500
+    name: 50
+  photos:
+    size: 20
+    limit: [300, 200]
+    type_image: "image/jpeg,image/gif,image/png"
+  posts:
+    title: 50
+  foods:
+    name: 100
+  bookings:
+    max_hour: 23
+    min_hour: 7
+  orders:
+    min: 1
+    max: 50
+    step: 1
+  comments:
+    content: 1000
+  vouchers:
+    number: 10

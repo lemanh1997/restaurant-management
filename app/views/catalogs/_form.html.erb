@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="form-create">
+    <%= form_for @catalog do |f| %>
+      <%= render "shared/error_messages", object: f.object %>
+
+      <span class="title-create text-center"><%= yield :title %></span>
+
+      <%= f.label :name, class: "text-input" %>
+      <%= f.text_field :name, class: "input-form" %>
+
+      <%= f.label :description, class: "text-input" %>
+      <%= f.text_area :description, class: "input-form" %>
+
+      <%= f.label :image, class: "text-input" %>
+      <%= f.file_field :image, accept: Settings.models.photos.type_image, class: "input-form" %>
+
+      <%= f.submit yield(:button_name), class: "btn submit" %>
+    <% end %>
+    <br>
+    <div>
+      <%= link_to t("buttons.back"), catalogs_path, class: "btn submit" %>
+    </div>
+  </div>
+</div>
